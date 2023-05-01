@@ -112,4 +112,22 @@ footer p {
   margin: 0;
   font-size: 0.8rem;
   color: #888;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
 }/*# sourceMappingURL=signup.css.map */

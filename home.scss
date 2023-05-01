@@ -41,7 +41,15 @@ body {
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
+ 
+  #welcome {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
   
+
   main {
     padding: 2rem;
     display: flex;
@@ -102,3 +110,23 @@ body {
     font-size: 0.8rem;
     margin: 0;
   }
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    section {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
